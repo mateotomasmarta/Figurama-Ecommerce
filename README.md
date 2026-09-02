@@ -47,5 +47,10 @@ npm run dev
 5. Abrir el navegador en la URL que muestra la consola (por defecto `http://localhost:5173/`).
 
 
+## Componentes
+
+- **NavBar** — Barra de navegación superior con el logo de la tienda, las categorías de productos y el carrito.
+- **CartWidget** — Ícono de carrito con contador de items
+- **ItemListContainer** — Contenedor principal que da mensaje de bienvenida.
 
 Desarrollado por Mateo Marta
