@@ -1,0 +1,22 @@
+.widget {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 24px;
+    color: var(--verde);
+    filter: drop-shadow(0 0 6px var(--verde));
+}
+
+.badge {
+    background-color: var(--rosa);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 999px;
+    padding: 2px 8px;
+    box-shadow: 0 0 10px var(--rosa);
+}

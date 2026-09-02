@@ -1,0 +1,20 @@
+:root {
+    --fondo: #0a0a0f;
+    --fondo-nav: #050508;
+    --rosa: #ff2d6f;
+    --verde: #2bffb0;
+    --violeta: #a855f7;
+    --texto: #e8e8f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fondo);
+    color: var(--texto);
+    font-family: system-ui, sans-serif;
+}
