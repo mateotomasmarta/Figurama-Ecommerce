@@ -52,5 +52,15 @@ npm run dev
 - **NavBar** — Barra de navegación superior con el logo de la tienda, las categorías de productos y el carrito.
 - **CartWidget** — Ícono de carrito con contador de items
 - **ItemListContainer** — Contenedor principal que da mensaje de bienvenida.
+- 
+## Simulación de cargas de productos
+
+Los productos se obtienen desde `src/mock/asyncMock.js`, que exporta la
+función `getProducts`. Esta función devuelve una Promise que se resuelve
+a los 2 segundos mediante `setTimeout`, simulando la latencia de una API real.
+
+El componente `ItemListContainer` llama a esa promesa dentro de un `useEffect`
+con array de dependencias vacío, para que la petición ocurra únicamente
+al montarse el componente, y guarda el resultado en el estado `items`.
 
 Desarrollado por Mateo Marta
