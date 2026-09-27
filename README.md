@@ -52,7 +52,10 @@ npm run dev
 - **NavBar** — Barra de navegación superior con el logo de la tienda, las categorías de productos y el carrito.
 - **CartWidget** — Ícono de carrito con contador de items
 - **ItemListContainer** — Contenedor principal que da mensaje de bienvenida.
-- 
+- **ItemDetailContainer** — Obtiene un producto por su id y administra el estado.
+- **ItemDetail** — Muestra la información completa del producto.
+- **ItemCount** — Selector de cantidad con límites según el stock.
+
 ## Simulación de cargas de productos
 
 Los productos se obtienen desde `src/mock/asyncMock.js`, que exporta la
@@ -62,5 +65,22 @@ a los 2 segundos mediante `setTimeout`, simulando la latencia de una API real.
 El componente `ItemListContainer` llama a esa promesa dentro de un `useEffect`
 con array de dependencias vacío, para que la petición ocurra únicamente
 al montarse el componente, y guarda el resultado en el estado `items`.
+
+## Detalle de producto
+
+La función `getProductById(productId)` en `src/mock/asyncMock.js` recibe un
+identificador, busca el producto con `.find()` dentro del array y devuelve
+una Promise. Resuelve con el producto encontrado o la rechaza con un error
+si el id no existe. Al igual que `getProducts`, simula la latencia de una
+API con un `setTimeout` de 2 segundos.
+
+El componente `ItemDetailContainer` consume esa función dentro de un
+`useEffect`, guarda el producto en estado y muestra un mensaje de carga
+mientras la promesa está pendiente. La presentación se delega en
+`ItemDetail`, que muestra la información completa del producto e incorpora
+el componente `ItemCount`.
+
+`ItemCount` recibe el stock del producto por props y controla la cantidad
+seleccionada, impidiendo superar el stock disponible o bajar de una unidad.
 
 Desarrollado por Mateo Marta
