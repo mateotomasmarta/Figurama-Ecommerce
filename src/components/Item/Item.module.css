@@ -42,3 +42,8 @@
     padding: 12px 14px;
     text-shadow: 0 0 8px rgba(255, 45, 111, 0.6);
 }
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
