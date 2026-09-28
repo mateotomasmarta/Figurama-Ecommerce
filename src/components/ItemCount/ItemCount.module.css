@@ -35,3 +35,28 @@
     min-width: 30px;
     text-align: center;
 }
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.agregar {
+    background-color: var(--rosa);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.agregar:hover {
+    box-shadow: 0 0 18px rgba(255, 45, 111, 0.6);
+}

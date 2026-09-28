@@ -83,4 +83,22 @@ el componente `ItemCount`.
 `ItemCount` recibe el stock del producto por props y controla la cantidad
 seleccionada, impidiendo superar el stock disponible o bajar de una unidad.
 
+## Navegación
+
+La aplicación utiliza `react-router-dom` para el manejo de rutas.
+`BrowserRouter` envuelve la aplicación en `App.jsx` y define cuatro rutas:
+
+- `/` — listado completo de productos
+- `/category/:id` — listado filtrado por categoría
+- `/item/:id` — detalle de un producto
+- `*` — página de error 404 (NotFound)
+
+El `NavBar` queda fuera de `<Routes>`, por lo que permanece visible en todas
+las vistas. La navegación se realiza con el componente `<Link>`, evitando
+recargas completas de página.
+
+`ItemListContainer` e `ItemDetailContainer` obtienen el parámetro de la URL
+mediante `useParams()` y lo incluyen en el array de dependencias de su
+`useEffect`, de modo que los datos se recargan al cambiar la ruta.
+
 Desarrollado por Mateo Marta
