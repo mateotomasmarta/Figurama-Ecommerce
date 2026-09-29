@@ -31,3 +31,185 @@
     color: var(--verde);
     text-shadow: 0 0 8px var(--verde), 0 0 20px var(--verde);
 }
+
+.auth {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+}
+
+.email {
+    color: #9a9ab0;
+    font-size: 11px;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.logout {
+    background: transparent;
+    color: var(--rosa);
+    border: 1px solid var(--rosa);
+    border-radius: 5px;
+    padding: 5px 12px;
+    font-size: 11px;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.logout:hover {
+    box-shadow: 0 0 12px rgba(255, 45, 111, 0.4);
+}
+
+.auth {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.userMenu {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.userIcon {
+    font-size: 26px;
+    color: var(--violeta);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.userIcon:hover {
+    color: var(--verde);
+    filter: drop-shadow(0 0 8px var(--verde));
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 10px;
+    background-color: #0f0f16;
+    border: 1px solid rgba(168, 85, 247, 0.35);
+    border-radius: 8px;
+    padding: 8px 0;
+    min-width: 210px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.6);
+    z-index: 100;
+}
+
+.dropdownEmail {
+    color: #6a6a80;
+    font-size: 11px;
+    padding: 6px 16px 10px;
+    border-bottom: 1px solid #22222e;
+    margin-bottom: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dropdownItem {
+    background: transparent;
+    border: none;
+    color: var(--texto);
+    text-align: left;
+    padding: 9px 16px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.dropdownItem:hover {
+    background-color: rgba(43, 255, 176, 0.08);
+    color: var(--verde);
+}
+
+.auth {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.userMenu {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.userIcon {
+    font-size: 26px;
+    color: var(--violeta);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.userIcon:hover {
+    color: var(--verde);
+    filter: drop-shadow(0 0 8px var(--verde));
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #0f0f16;
+    border: 1px solid rgba(168, 85, 247, 0.35);
+    border-radius: 8px;
+    padding: 26px 0 8px;
+    min-width: 210px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.6);
+    z-index: 100;
+}
+
+.cerrar {
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    background: transparent;
+    border: none;
+    color: #6a6a80;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 2px 6px;
+}
+
+.cerrar:hover {
+    color: var(--rosa);
+}
+
+.dropdownEmail {
+    color: #6a6a80;
+    font-size: 11px;
+    padding: 0 16px 10px;
+    border-bottom: 1px solid #22222e;
+    margin-bottom: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dropdownItem {
+    background: transparent;
+    border: none;
+    color: var(--texto);
+    text-align: left;
+    padding: 9px 16px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.dropdownItem:hover {
+    background-color: rgba(43, 255, 176, 0.08);
+    color: var(--verde);
+}

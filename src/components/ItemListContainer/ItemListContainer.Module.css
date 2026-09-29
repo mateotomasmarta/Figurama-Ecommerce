@@ -4,6 +4,7 @@
     align-items: center;
     padding: 40px 20px;
 }
+
 .greeting {
     color: var(--violeta);
     font-size: 34px;
@@ -11,4 +12,44 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     text-shadow: 0 0 10px var(--violeta), 0 0 30px rgba(168, 85, 247, 0.6);
+}
+
+.aviso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.avisoTitulo {
+    color: var(--verde);
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 12px rgba(43, 255, 176, 0.45);
+}
+
+.avisoTexto {
+    color: #9a9ab0;
+    font-size: 15px;
+    max-width: 420px;
+}
+
+.avisoLink {
+    color: var(--rosa);
+    text-decoration: none;
+    border: 1px solid var(--rosa);
+    border-radius: 6px;
+    padding: 10px 22px;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-top: 8px;
+    transition: all 0.2s ease;
+}
+
+.avisoLink:hover {
+    box-shadow: 0 0 16px rgba(255, 45, 111, 0.5);
 }

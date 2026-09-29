@@ -42,7 +42,7 @@ const Cart = () => {
                 <p className={styles.total}>Total: ${total}</p>
                 <div className={styles.acciones}>
                     <button className={styles.vaciar} onClick={clear}>Vaciar carrito</button>
-                    <button className={styles.finalizar}>Finalizar compra</button>
+                    <Link to="/checkout" className={styles.finalizar}>Finalizar compra</Link>
                 </div>
             </div>
         </div>

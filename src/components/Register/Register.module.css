@@ -1,0 +1,75 @@
+.contenedor {
+    display: flex;
+    justify-content: center;
+    padding: 70px 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+    max-width: 380px;
+    background-color: #0f0f16;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+    border-radius: 12px;
+    padding: 36px 30px;
+}
+
+.titulo {
+    color: var(--verde);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 22px;
+    text-align: center;
+    text-shadow: 0 0 12px rgba(43, 255, 176, 0.5);
+}
+
+.input {
+    background-color: #14161c;
+    border: 1px solid #2a2a3a;
+    border-radius: 6px;
+    padding: 12px 14px;
+    color: var(--texto);
+    font-size: 15px;
+    outline: none;
+}
+
+.input:focus {
+    border-color: var(--verde);
+    box-shadow: 0 0 10px rgba(43, 255, 176, 0.25);
+}
+
+.boton {
+    background-color: var(--rosa);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.boton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.error {
+    color: #ff5c7a;
+    font-size: 13px;
+    text-align: center;
+}
+
+.link {
+    color: #9a9ab0;
+    font-size: 13px;
+    text-align: center;
+}
+
+.link a {
+    color: var(--verde);
+    text-decoration: none;
+}
